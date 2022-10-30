@@ -1,7 +1,13 @@
+import data from '../data.js';
+
 const ProductsScreen = {
   after_render: () => {},
   render: () => {
+    const { products } = data;
+    const categories = products.map((product) => product.category);
+    const uniqueCategories = categories.filter((v, i, a) => a.indexOf(v) === i);
     return `
+
 <!-- category section starts  -->
 
 <section class="category">
@@ -9,26 +15,17 @@ const ProductsScreen = {
     <h1 class="heading"> shop by <span>category</span> </h1>
 
     <div class="box-container">
-
-        <a href="#" class="box">
-            <img src="images/dashboard-1.png" alt="">
-            <h3>finance</h3>
-        </a>
-
-        <a href="#" class="box">
-            <img src="images/dashboard-2.png" alt="">
-            <h3>marketing</h3>
-        </a>
-
-        <a href="#" class="box">
-            <img src="images/dashboard-3.png" alt="">
-            <h3>sales</h3>
-        </a>
-
-        <a href="#" class="box">
-            <img src="images/dashboard-3.png" alt="">
-            <h3>dashboards</h3>
-        </a>
+        
+        ${uniqueCategories
+          .map(
+            (cat) => `
+            <a href="#" class="box">
+                <img src="images/dashboard-1.png" alt="">
+                <h3>${cat}</h3>
+            </a>
+        `
+          )
+          .join('')}
 
     </div>
 
@@ -44,77 +41,36 @@ const ProductsScreen = {
 
     <div class="box-container">
 
-        <div class="box">
-            <div class="image">
-                <img src="images/dashboard-1.png" class="main-img" alt="">
-                <img src="images/dashboard-1.png" class="hover-img" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-search-plus"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>excel spreadsheet</h3>
-                <div class="price">$249.99 <span>$399.99</span></div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-        </div>
+      ${products
+        .map(
+          (product) => `
+      <div class="box">
+          <div class="image">
+              <img src="${product.image}" class="main-img" alt="${product.name}">
+              <img src="${product.imageHover}" class="hover-img" alt="${product.name}">
+              <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+                  <a href="#" class="fas fa-search-plus"></a>
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>${product.name}</h3>
+              <div class="price">$${product.price} <span>$${product.discountPrice}</span></div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+          </div>
+      </div>
+      `
+        )
+        .join('')}
 
-        <div class="box">
-            <div class="image">
-                <img src="images/dashboard-1.png" class="main-img" alt="">
-                <img src="images/dashboard-1.png" class="hover-img" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-search-plus"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>excel dashboard</h3>
-                <div class="price">$249.99 <span>$399.99</span></div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/dashboard-1.png" class="main-img" alt="">
-                <img src="images/dashboard-1.png" class="hover-img" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-search-plus"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>excel spreadsheet</h3>
-                <div class="price">$249.99 <span>$399.99</span></div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-        </div>
     </div>
 
 </section>

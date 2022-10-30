@@ -1,4 +1,5 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
+import data from '../data.js';
 
 const HomeScreen = {
   after_render: () => {
@@ -12,44 +13,30 @@ const HomeScreen = {
     });
   },
   render: () => {
+    const { banner } = data;
     return `
       <!-- banner section starts  -->
 
       <section class="home">
         <div class="swiper home-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide slide">
-              <div class="image">
-                <img src="images/dashboard-1.png" alt="" />
-              </div>
-              <div class="content">
-                <span>upto 50% off</span>
-                <h3>excel dashboard</h3>
-                <a href="#" class="btn">shop now</a>
-              </div>
-            </div>
 
-            <div class="swiper-slide slide">
-              <div class="image">
-                <img src="images/dashboard-2.png" alt="" />
+            ${banner.map(
+              (product) => `
+              <div class="swiper-slide slide">
+                <div class="image">
+                  <img src="${product.image}" alt="${product.name}" />
+                </div>
+                <div class="content">
+                  <span>upto 50% off</span>
+                  <h3>${product.name}</h3>
+                  <a href="#" class="btn">shop now</a>
+                </div>
               </div>
-              <div class="content">
-                <span>upto 50% off</span>
-                <h3>excel dashboard</h3>
-                <a href="#" class="btn">shop now</a>
-              </div>
-            </div>
+            `
+            )}
 
-            <div class="swiper-slide slide">
-              <div class="image">
-                <img src="images/dashboard-3.png" alt="" />
-              </div>
-              <div class="content">
-                <span>upto 50% off</span>
-                <h3>excel dashboard</h3>
-                <a href="#" class="btn">shop now</a>
-              </div>
-            </div>
+
           </div>
 
           <div class="swiper-button-next"></div>

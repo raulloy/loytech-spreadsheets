@@ -14,7 +14,6 @@ const router = () => {
   const request = parseRequestUrl();
   const parseRequest = request.resource ? `/${request.resource}` : '/';
   const screen = routes[parseRequest] ? routes[parseRequest] : Error404Screen;
-  console.log(screen);
 
   const main = document.getElementById('main-container');
   main.innerHTML = screen.render();

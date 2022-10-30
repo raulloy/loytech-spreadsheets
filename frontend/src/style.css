@@ -630,6 +630,7 @@ section {
 
 .products .box-container .box .image {
   position: relative;
+  padding: 10px;
 }
 
 .products .box-container .box .image img {

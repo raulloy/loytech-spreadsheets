@@ -123,42 +123,42 @@ const AboutScreen = {
         <div class="swiper-wrapper">
 
             <div class="swiper-slide slide">
-                <img src="images/pic-1.png" alt="">
+                <img src="images/analytics-data-visualization.png" alt="">
                 <h3>john deo</h3>
                 <span>designer</span>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt explicabo laborum eos delectus, in pariatur iste! Ducimus laudantium nostrum odio.</p>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="images/pic-2.png" alt="">
+                <img src="images/analytics-data-visualization.png" alt="">
                 <h3>john deo</h3>
                 <span>designer</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa non eaque illo laudantium amet. Eius beatae, consequuntur corrupti atque, quod suscipit rem maiores impedit alias labore numquam nihil nostrum.</p>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="images/pic-3.png" alt="">
+                <img src="images/analytics-data-visualization.png" alt="">
                 <h3>john deo</h3>
                 <span>designer</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, culpa. Ducimus quos fuga hic. Tempore!</p>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="images/pic-4.png" alt="">
+                <img src="images/analytics-data-visualization.png" alt="">
                 <h3>john deo</h3>
                 <span>designer</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo placeat laborum pariatur voluptatibus tenetur impedit assumenda ex reprehenderit soluta ea fugiat error in laboriosam cum dicta consequuntur, sapiente minima quis hic deserunt magnam dignissimos.</p>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="images/pic-5.png" alt="">
+                <img src="images/analytics-data-visualization.png" alt="">
                 <h3>john deo</h3>
                 <span>designer</span>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt explicabo laborum eos delectus, in pariatur iste! Ducimus laudantium nostrum odio.</p>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="images/pic-6.png" alt="">
+                <img src="images/analytics-data-visualization.png" alt="">
                 <h3>john deo</h3>
                 <span>designer</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus earum quas quo natus quis, accusamus maxime magni molestias eos. Ab nihil magnam, id inventore explicabo ducimus repudiandae unde distinctio iste!</p>
