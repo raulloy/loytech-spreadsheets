@@ -1,9 +1,17 @@
-import data from '../data.js';
-
 const ProductsScreen = {
   after_render: () => {},
-  render: () => {
-    const { products } = data;
+  render: async () => {
+    const url = 'http://localhost:5000/api/products';
+    const response = await fetch(url, {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    const products = await response.json();
+
     const categories = products.map((product) => product.category);
     const uniqueCategories = categories.filter((v, i, a) => a.indexOf(v) === i);
     return `

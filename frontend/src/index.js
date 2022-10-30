@@ -10,13 +10,13 @@ const routes = {
   '/products': ProductsScreen,
 };
 
-const router = () => {
+const router = async () => {
   const request = parseRequestUrl();
   const parseRequest = request.resource ? `/${request.resource}` : '/';
   const screen = routes[parseRequest] ? routes[parseRequest] : Error404Screen;
 
   const main = document.getElementById('main-container');
-  main.innerHTML = screen.render();
+  main.innerHTML = await screen.render();
   screen.after_render();
 };
 

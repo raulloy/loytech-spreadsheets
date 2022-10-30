@@ -1,5 +1,4 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
-import data from '../data.js';
 
 const HomeScreen = {
   after_render: () => {
@@ -12,8 +11,17 @@ const HomeScreen = {
       },
     });
   },
-  render: () => {
-    const { banner } = data;
+  render: async () => {
+    const url = 'http://localhost:5000/api/banner-products';
+    const response = await fetch(url, {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    const banner = await response.json();
     return `
       <!-- banner section starts  -->
 
