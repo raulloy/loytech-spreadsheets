@@ -636,6 +636,8 @@ section {
   height: 30rem;
   -webkit-animation: fadeIn 0.2s linear;
   animation: fadeIn 0.2s linear;
+  max-width: 300px;
+  height: auto;
 }
 
 .products .box-container .box .image .hover-img {
@@ -719,10 +721,13 @@ section {
 }
 
 .product-banner .box-container .box img {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 285px;
   -o-object-fit: cover;
   object-fit: cover;
+  position: absolute;
+  top: 20%;
+  right: 5%;
 }
 
 .product-banner .box-container .box .content {

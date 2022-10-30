@@ -1,69 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font awesome cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
 
-    <!-- swiper css link  -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-
-    <!-- cusom css file link  -->
-    <link rel="stylesheet" href="style.css" />
-    <title>LoyTech - Spreadsheets</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="/" class="logo"> <i class="fas fa-database"></i> LoyTech </a>
-
-      <form action="" class="search-form">
-        <input type="search" id="search-box" placeholder="search here..." />
-        <label for="search-box" class="fas fa-search"></label>
-      </form>
-
-      <div class="icons">
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <div id="search-btn" class="fas fa-search"></div>
-        <a href="login.html" class="fas fa-user"></a>
-        <a href="cart.html" class="fas fa-shopping-cart"></a>
-      </div>
-    </header>
-
-    <!-- side-bar section starts -->
-
-    <div class="side-bar">
-      <div id="close-side-bar" class="fas fa-times"></div>
-
-      <div class="user">
-        <img src="images/business-intelligence.png" alt="" />
-        <h3>LoyTech - User</h3>
-        <a href="#">log out</a>
-      </div>
-
-      <nav class="navbar">
-        <a href="/#/"> <i class="fas fa-angle-right"></i> home </a>
-        <a href="/#/about"> <i class="fas fa-angle-right"></i> about </a>
-        <a href="/#/products"><i class="fas fa-angle-right"></i> products</a>
-        <a href="contact.html"> <i class="fas fa-angle-right"></i> contact </a>
-        <a href="login.html"> <i class="fas fa-angle-right"></i> login </a>
-        <a href="register.html">
-          <i class="fas fa-angle-right"></i> register
-        </a>
-        <a href="cart.html"> <i class="fas fa-angle-right"></i> cart </a>
-      </nav>
-    </div>
-
-    <!-- side-bar section ends -->
-
-    <div id="main-container">
+const HomeScreen = {
+  after_render: () => {
+    var swiper = new Swiper('.home-slider', {
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  },
+  render: () => {
+    return `
       <!-- banner section starts  -->
 
       <section class="home">
@@ -227,44 +176,8 @@
       </section>
 
       <!-- arrivals section ends -->
-    </div>
+    `;
+  },
+};
 
-    <!-- footer section starts  -->
-
-    <section class="quick-links">
-      <a href="/" class="logo"> <i class="fas fa-database"></i> LoyTech </a>
-
-      <div class="links">
-        <a href="home.html"> home </a>
-        <a href="about.html"> about </a>
-        <a href="products.html"> products </a>
-        <a href="contact.html"> contact </a>
-        <a href="login.html"> login </a>
-        <a href="register.html"> register </a>
-        <a href="cart.html"> cart </a>
-      </div>
-
-      <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-      </div>
-    </section>
-
-    <section class="credit">
-      <p>created by <span>LoyTech</span> | all rights reserved!</p>
-
-      <img src="images/card_img.png" alt="" />
-    </section>
-
-    <!-- footer section ends -->
-
-    <!-- swiper js link      -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <!-- custom js file link  -->
-    <script src="script.js"></script>
-    <script type="module" src="index.js"></script>
-  </body>
-</html>
+export default HomeScreen;

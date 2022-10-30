@@ -19,5 +19,8 @@
   "homepage": "https://github.com/raulloy/loytech-spreadsheets#readme",
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "swiper": "^8.4.4"
   }
 }
