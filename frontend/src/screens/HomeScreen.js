@@ -1,4 +1,5 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
+import Swiper from 'swiper';
+import axios from 'axios';
 
 const HomeScreen = {
   after_render: () => {
@@ -12,8 +13,8 @@ const HomeScreen = {
     });
   },
   render: async () => {
-    const url = 'http://localhost:5000/api/banner-products';
-    const response = await fetch(url, {
+    const response = await axios({
+      url: 'http://localhost:5000/api/banner-products',
       method: 'GET',
       mode: 'cors',
       headers: {
@@ -21,7 +22,7 @@ const HomeScreen = {
       },
     });
 
-    const banner = await response.json();
+    const banner = response.data;
     return `
       <!-- banner section starts  -->
 

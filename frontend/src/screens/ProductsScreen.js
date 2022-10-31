@@ -1,8 +1,10 @@
+import axios from 'axios';
+
 const ProductsScreen = {
   after_render: () => {},
   render: async () => {
-    const url = 'http://localhost:5000/api/products';
-    const response = await fetch(url, {
+    const response = await axios({
+      url: 'http://localhost:5000/api/products',
       method: 'GET',
       mode: 'cors',
       headers: {
@@ -10,7 +12,7 @@ const ProductsScreen = {
       },
     });
 
-    const products = await response.json();
+    const products = response.data;
 
     const categories = products.map((product) => product.category);
     const uniqueCategories = categories.filter((v, i, a) => a.indexOf(v) === i);

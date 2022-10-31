@@ -309,7 +309,7 @@ section {
 .banner .box-container .box {
   position: relative;
   height: 25rem;
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   border-radius: 0.5rem;
   overflow: hidden;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -358,7 +358,7 @@ section {
 
 .arrivals .box-container .box {
   border-radius: 0.5rem;
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   padding: 2rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -531,7 +531,7 @@ section {
   width: 35rem;
   padding: 3rem;
   text-align: center;
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
@@ -573,7 +573,7 @@ section {
 .category .box-container .box {
   text-align: center;
   border-radius: 0.5rem;
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   padding: 2rem;
   background: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -607,7 +607,7 @@ section {
 }
 
 .products .box-container .box {
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   text-align: center;
   background: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -631,6 +631,7 @@ section {
 .products .box-container .box .image {
   position: relative;
   padding: 10px;
+  min-height: 223px;
 }
 
 .products .box-container .box .image img {
@@ -711,9 +712,10 @@ section {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   overflow: hidden;
   height: 30rem;
+  background-color: white;
 }
 
 .product-banner .box-container .box:hover img {
@@ -763,7 +765,7 @@ section {
   border-radius: 0.5rem;
   text-align: center;
   padding: 2rem;
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -841,7 +843,7 @@ section {
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   background: #fff;
   text-transform: none;
   color: #666;
@@ -924,7 +926,7 @@ section {
   background: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   margin: 1rem auto;
 }
 
@@ -941,7 +943,7 @@ section {
   width: 100%;
   padding: 1.2rem 1.4rem;
   border-radius: 0.5rem;
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   font-size: 1.6rem;
   color: #666;
   text-transform: none;
@@ -1003,7 +1005,7 @@ section {
 
 .shopping-cart .box-container .box {
   padding: 2rem;
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   background: #fff;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -1080,7 +1082,7 @@ section {
   margin-top: 2rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  border: 0.2rem solid #333;
+  border: 0.2rem solid rgb(168, 168, 168);
   border-radius: 0.5rem;
   background: #fff;
   padding: 2rem;
