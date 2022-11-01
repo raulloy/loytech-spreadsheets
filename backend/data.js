@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   banner: [
     {
       _id: '1',
