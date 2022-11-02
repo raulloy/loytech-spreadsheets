@@ -48,7 +48,7 @@ export default {
       _id: '1',
       name: 'Control de Actividades en Excel',
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, rerum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit temporibus reprehenderit, nobis animi nulla perspiciatis non molestiae recusandae placeat quo nihil! Natus et eaque ratione. Quis a nobis repudiandae eum!',
       category: 'Marketing',
       image: './images/dashboard-1.png',
       imageHover: './images/dashboard-5.png',
@@ -62,7 +62,7 @@ export default {
       _id: '2',
       name: 'Control de Stock en Excel',
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, rerum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit temporibus reprehenderit, nobis animi nulla perspiciatis non molestiae recusandae placeat quo nihil! Natus et eaque ratione. Quis a nobis repudiandae eum!',
       category: 'Dashboards',
       image: './images/dashboard-2.png',
       imageHover: './images/dashboard-5.png',
@@ -76,7 +76,7 @@ export default {
       _id: '3',
       name: 'Control de Ventas en Excel',
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, rerum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit temporibus reprehenderit, nobis animi nulla perspiciatis non molestiae recusandae placeat quo nihil! Natus et eaque ratione. Quis a nobis repudiandae eum!',
       category: 'Ventas',
       image: './images/dashboard-3.png',
       imageHover: './images/dashboard-5.png',
@@ -90,7 +90,7 @@ export default {
       _id: '4',
       name: 'Control Financiero Plantilla en Excel',
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, rerum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit temporibus reprehenderit, nobis animi nulla perspiciatis non molestiae recusandae placeat quo nihil! Natus et eaque ratione. Quis a nobis repudiandae eum!',
       category: 'Finanzas',
       image: './images/dashboard-1.png',
       imageHover: './images/dashboard-5.png',
@@ -104,7 +104,7 @@ export default {
       _id: '5',
       name: 'Indicadores de Ventas en Excel',
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, rerum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit temporibus reprehenderit, nobis animi nulla perspiciatis non molestiae recusandae placeat quo nihil! Natus et eaque ratione. Quis a nobis repudiandae eum!',
       category: 'Dashboards',
       image: './images/dashboard-2.png',
       imageHover: './images/dashboard-5.png',
@@ -118,7 +118,7 @@ export default {
       _id: '6',
       name: 'Plan Estratégico en Excel',
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, rerum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit temporibus reprehenderit, nobis animi nulla perspiciatis non molestiae recusandae placeat quo nihil! Natus et eaque ratione. Quis a nobis repudiandae eum!',
       category: 'Marketing',
       image: './images/dashboard-3.png',
       imageHover: './images/dashboard-5.png',
