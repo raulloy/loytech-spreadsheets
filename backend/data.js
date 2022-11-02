@@ -25,7 +25,7 @@ export default {
       price: 10,
       discountPrice: 20,
       rating: 5,
-      numReviews: 20,
+      numReviews: 15,
       countInStock: 0,
     },
     {
@@ -39,7 +39,7 @@ export default {
       price: 10,
       discountPrice: 20,
       rating: 3,
-      numReviews: 20,
+      numReviews: 40,
       countInStock: 3,
     },
   ],
@@ -55,7 +55,7 @@ export default {
       price: 10,
       discountPrice: 20,
       rating: 4.5,
-      numReviews: 20,
+      numReviews: 60,
       countInStock: 10,
     },
     {
@@ -83,7 +83,7 @@ export default {
       price: 10,
       discountPrice: 20,
       rating: 3,
-      numReviews: 20,
+      numReviews: 18,
       countInStock: 3,
     },
     {
@@ -97,7 +97,7 @@ export default {
       price: 10,
       discountPrice: 20,
       rating: 4.5,
-      numReviews: 20,
+      numReviews: 5,
       countInStock: 10,
     },
     {
@@ -111,7 +111,7 @@ export default {
       price: 10,
       discountPrice: 20,
       rating: 5,
-      numReviews: 20,
+      numReviews: 12,
       countInStock: 10,
     },
     {

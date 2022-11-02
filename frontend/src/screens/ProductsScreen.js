@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Rating } from '../components/Rating';
 
 const ProductsScreen = {
   after_render: () => {},
@@ -56,8 +57,12 @@ const ProductsScreen = {
           (product) => `
       <div class="box">
           <div class="image">
-              <img src="${product.image}" class="main-img" alt="${product.name}">
-              <img src="${product.imageHover}" class="hover-img" alt="${product.name}">
+              <img src="${product.image}" class="main-img" alt="${
+            product.name
+          }">
+              <img src="${product.imageHover}" class="hover-img" alt="${
+            product.name
+          }">
               <div class="icons">
                   <a href="#" class="fas fa-shopping-cart"></a>
                   <a href="#" class="fas fa-search-plus"></a>
@@ -67,13 +72,14 @@ const ProductsScreen = {
           </div>
           <div class="content">
               <h3>${product.name}</h3>
-              <div class="price">$${product.price} <span>$${product.discountPrice}</span></div>
+              <div class="price">$${product.price} <span>$${
+            product.discountPrice
+          }</span></div>
               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
+                  ${Rating.render({
+                    value: product.rating,
+                    text: `${product.numReviews} reviews`,
+                  })}
               </div>
           </div>
       </div>
