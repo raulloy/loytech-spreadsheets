@@ -12,6 +12,15 @@ app.get('/api/products', (req, res) => {
 app.get('/api/banner-products', (req, res) => {
   res.send(data.banner);
 });
+app.get('/api/products/:id', (req, res) => {
+  const product = data.products.find((product) => product._id == req.params.id);
+  if (product) {
+    res.send(product);
+  } else {
+    // res.sendStatus(404);
+    res.status(404).send('Product not found!');
+  }
+});
 
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
