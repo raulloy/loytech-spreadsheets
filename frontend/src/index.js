@@ -1,4 +1,5 @@
 import AboutScreen from './screens/AboutScreen.js';
+import CartScreen from './screens/CartScreen.js';
 import Error404Screen from './screens/Error404Screen.js';
 import HomeScreen from './screens/HomeScreen.js';
 import ProductDetailsScreen from './screens/ProductDetailsScreen.js';
@@ -10,6 +11,8 @@ const routes = {
   '/about': AboutScreen,
   '/products': ProductsScreen,
   '/product/:id': ProductDetailsScreen,
+  '/cart/:id': CartScreen,
+  '/cart': CartScreen,
 };
 
 const router = async () => {
