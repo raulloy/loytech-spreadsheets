@@ -5,6 +5,7 @@ import Error404Screen from './screens/Error404Screen.js';
 import HomeScreen from './screens/HomeScreen.js';
 import ProductDetailsScreen from './screens/ProductDetailsScreen.js';
 import ProductsScreen from './screens/ProductsScreen.js';
+import ProfileScreen from './screens/ProfileScreen.js';
 import RegisterScreen from './screens/RegisterScreen.js';
 import SigninScreen from './screens/SigninScreen.js';
 import { parseRequestUrl } from './utils.js';
@@ -18,6 +19,7 @@ const routes = {
   '/cart': CartScreen,
   '/signin': SigninScreen,
   '/register': RegisterScreen,
+  '/profile': ProfileScreen,
 };
 
 const router = async () => {
